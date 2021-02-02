@@ -1,0 +1,22 @@
+<h1>Instructions</h1>
+<ul>
+  <li>Fork this stackblitz</li>
+  <li>Read specifications in the readme provided in this stackblitz</li>
+  <li>Create an app based off those specifications</li>
+  <li>email us a share link to your stackblitz</li>
+</ul>
+<p>
+  Some tools are already provided to you such as this mock backend. We use
+  Material, RXJS, and NGRX extensivley in our applications and they are included
+  in this stackblitz dependencies.
+</p>
+<br />
+<button mat-button (click)="addCamera()">add a camera</button>
+<button mat-button (click)="addVehicle()">add a vehicle</button>
+<button mat-button (click)="assign()">assign</button>
+
+<pre>{{ getVehicles() | async | json}}</pre>
+<pre>{{ getVehicleById(1) | async | json}}</pre>
+<pre>{{ getCameras() | async | json}}</pre>
+<pre>{{ getCameraById(0) | async | json}}</pre>
+<pre>{{ getAssignments() | async | json}}</pre>
