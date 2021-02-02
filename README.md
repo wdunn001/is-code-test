@@ -2,17 +2,17 @@
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/is-code-test)
 
-#Software Requirements Specification
+## Software Requirements Specification
 
-##Purpose
+### Purpose
 
 The purpose of this document is to build a customer-facing on-board camera management page to allow assignments of the cameras to specific vehicles. 
 
-##Project Scope
+### Project Scope
 
 The on-board camera management page will be used by users to easily manage current assignments and create new assignments that pair individual cameras with vehicles. This page should list all current assignments and allow users to search, edit or remove them. Also provide users with an intuitive way of creating new Camera-Vehicle pairs (assignments). 
 
-##Product Perspective
+### Product Perspective
 
 The Camera Manager page will work with three entities: 
 
