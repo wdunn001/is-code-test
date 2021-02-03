@@ -63,9 +63,11 @@ export class DataService {
       () => {
         let assignments: AssignmentResponse[] = [];
         this.assignments.forEach((v, k) => {
-          let assignment: AssignmentResponse = JSON.parse(JSON.stringify(v));
-          assignment.id = k;
-          assignments.push(assignment);
+          if (!v.deleted) {
+            let assignment: AssignmentResponse = JSON.parse(JSON.stringify(v));
+            assignment.id = k;
+            assignments.push(assignment);
+          }
         });
         return assignments;
       }
