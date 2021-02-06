@@ -38,6 +38,7 @@ export class AppComponent {
   addVehicle() {
     this.data.post("vehicles/:id", { id: 3 }, { name: "car", cameraId: 1 });
   }
+  
   addCamera() {
     this.data.post(
       "cameras/:id",
